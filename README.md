@@ -1,5 +1,5 @@
 # `asap`
-## /home/dponyatov/asap
+## as soon as possible
 
 (c) Dmitry Ponyatov <<dponyatov@gmail.com>> 2025 MIT
 
