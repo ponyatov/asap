@@ -1,0 +1,38 @@
+{
+    "version": 6,
+    "buildPresets": [
+        {
+            "name"           :   "glibc",
+            "configurePreset":   "glibc",
+            "targets"        :  ["all","install"]
+        }
+    ],
+    "configurePresets": [
+        {
+            "name"     : "common",
+            "hidden"   :  true,
+            "binaryDir": "${sourceDir}/tmp/${presetName}",
+            "generator": "Unix Makefiles",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX"    : "${sourceDir}/bin",
+                "CMAKE_MODULE_PATH"       : "${sourceDir}/cmake",
+                "CMAKE_COLOR_DIAGNOSTICS" : false,
+                "CMAKE_BUILD_TYPE"        : "Debug",
+                "CMAKE_VERBOSE_MAKEFILE"  : true
+            }
+        },
+        {
+            "name"          : "linux",
+            "inherits"      : "pc",
+            "hidden"        : true,
+            "cacheVariables": {"OS":"linux"}
+        },
+        {
+            "name"         : "glibc",
+            "inherits"     : "linux",
+            "displayName"  : "x86_64-linux-gnu",
+            "description"  : "native host",
+            "toolchainFile": "${sourceDir}/cmake/x86_64-linux-gnu.cmake"
+        }
+   ]
+}
