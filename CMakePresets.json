@@ -2,9 +2,9 @@
     "version": 6,
     "buildPresets": [
         {
-            "name":              "pillF103",
+            "name"           :   "pillF103",
             "configurePreset":   "pillF103",
-            "targets":          ["all","install"]
+            "targets"        :  ["all","install"]
         },
         {
             "name"           :   "f4disco",
@@ -51,8 +51,8 @@
             "cacheVariables": {"ARCH":"cortexM4"}
         },
         {
-            "name": "pillF103",
-            "inherits": "cortexM3",
+            "name"          : "pillF103",
+            "inherits"      : "cortexM3",
             "cacheVariables": {
                 "HW" :"pillF103",
                 "CPU":"stm32f103c8t", "SERIES": "STM32F1"
