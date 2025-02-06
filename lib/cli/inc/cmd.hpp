@@ -1,11 +1,15 @@
 #pragma once
 
 #include "os.hpp"
-
 /// @defgroup cmd cmd
 /// @ingroup vm
 /// @brief @ref vm commands
 /// @{
+
+#include "object.hpp"
+
+/// @brief @ref VM command
+class Cmd : public Object {};
 
 /// @name flow control
 /// @{

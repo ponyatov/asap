@@ -1,9 +1,10 @@
 #include "vm.hpp"
 
-i32 D[Dsz];
-u8 Dp = 0;
-u32 R[Rsz];
-u16 Rp = 0;
-byte M[Msz];
-u32 Cp = 0;
-u32 Ip = 0;
+VM::VM() {
+    Dp = 0;
+    Rp = 0;
+    Cp = 0;
+    Ip = 0;
+}
+
+const char VM::name[] = APP;

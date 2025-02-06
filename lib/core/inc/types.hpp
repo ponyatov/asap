@@ -16,6 +16,7 @@ typedef uint64_t i64;
 
 /// @name unsigned
 /// @{
+typedef unsigned int uint;
 typedef uint8_t u8;
 typedef u8 byte;
 typedef uint16_t u16;

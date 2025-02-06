@@ -12,6 +12,16 @@
             "targets"        :  ["all","install"]
         },
         {
+            "name"           :   "iskra",
+            "configurePreset":   "iskra",
+            "targets"        :  ["all","install"]
+        },
+        {
+            "name"           :   "l496disco",
+            "configurePreset":   "l496disco",
+            "targets"        :  ["all","install"]
+        },
+        {
             "name"           :   "glibc",
             "configurePreset":   "glibc",
             "targets"        :  ["all","install"]
@@ -24,6 +34,7 @@
             "binaryDir": "${sourceDir}/tmp/${presetName}",
             "generator": "Unix Makefiles",
             "cacheVariables": {
+                "APP"                     : "${workspaceFolderBasename}",
                 "CMAKE_INSTALL_PREFIX"    : "${sourceDir}/bin",
                 "CMAKE_MODULE_PATH"       : "${sourceDir}/cmake",
                 "CMAKE_COLOR_DIAGNOSTICS" : false,
@@ -64,6 +75,22 @@
             "cacheVariables": {
                 "HW" :"f4disco",
                 "CPU":"stm32f407vgt", "SERIES": "STM32F4"
+            }
+        },
+        {
+            "name"          : "iskra",
+            "inherits"      : "cortexM4",
+            "cacheVariables": {
+                "HW" :"iskra",
+                "CPU":"stm32f405rgt", "SERIES": "STM32F4"
+            }
+        },
+        {
+            "name"          : "l496disco",
+            "inherits"      : "cortexM4",
+            "cacheVariables": {
+                "HW" :"l496disco",
+                "CPU":"stm32l496agi", "SERIES": "STM32L4"
             }
         },
         {
