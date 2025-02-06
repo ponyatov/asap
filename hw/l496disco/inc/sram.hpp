@@ -4,4 +4,3 @@
 /// @brief BSP: external memory (PSRAM)
 /// @ingroup l496disco
 /// @{
-

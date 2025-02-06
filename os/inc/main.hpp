@@ -3,7 +3,8 @@
 #include "os.hpp"
 
 /// @defgroup main main
-/// @ingroup os
+/// @ingroup core
+/// @brief @ref os entry points
 /// @{
 
 /// @brief POSIX entry point
