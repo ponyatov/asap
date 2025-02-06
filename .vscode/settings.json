@@ -88,7 +88,7 @@
     "cmake.useCMakePresets" : "always",
     "cmake.buildBeforeRun"  : true,
     "cmake.debugConfig"     : {
-        "args": [ "${workspaceFolder}/lib/${workspaceFolderBasename}.ini" ] },
+        "args": [ "${workspaceFolder}/lib/app.ini" ] },
 
     // Python
     "autopep8.path": ["${workspaceFolder}/bin/autopep8", "autopep8"],

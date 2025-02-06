@@ -22,7 +22,7 @@ class VM : public Object {
     /// @}
 
    public:
-    static const char name[];
+    static const char name[];  ///< print @ref VM name as command line header
     VM();
 
     /// @name memory
