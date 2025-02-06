@@ -1,1 +1,2 @@
-OS = linux
+OS     = linux
+TARGET = $(ARCH)-$(OS)-gnu
