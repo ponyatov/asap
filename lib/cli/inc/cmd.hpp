@@ -1,5 +1,7 @@
 #pragma once
 
+#include "os.hpp"
+
 /// @defgroup cmd cmd
 /// @ingroup vm
 /// @brief @ref vm commands

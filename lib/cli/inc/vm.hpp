@@ -16,12 +16,14 @@
 
 /// @}
 
+#include "stack.hpp"
+
 /// @name memory
 /// @{
 
 extern i32 D[Dsz];   ///< data stack
 extern u8 Dp;        ///< @ref D pointer
-extern U32 R[Rsz];   ///< return stack
+extern u32 R[Rsz];   ///< return stack
 extern u16 Rp;       ///< @ref R pointer
 extern byte M[Msz];  ///< main memory
 extern u32 Cp;       ///< compiler pointer
