@@ -4,6 +4,7 @@
 
 /// @defgroup vm vm
 /// @ingroup cli
+/// @brief Virtual Machine
 /// @{
 
 /// @name config

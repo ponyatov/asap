@@ -4,6 +4,7 @@
 
 /// @defgroup cli cli
 /// @ingroup lib
+/// @brief @ref cli
 /// @{
 
 /// @}
