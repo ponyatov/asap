@@ -7,4 +7,6 @@
 /// @brief @ref cli
 /// @{
 
+#include "parser.hpp"
+
 /// @}

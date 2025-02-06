@@ -28,3 +28,4 @@ SORT_GROUP_NAMES       = YES
 REPEAT_BRIEF           = NO
 CALL_GRAPH             = YES
 CALLER_GRAPH           = YES
+PREDEFINED             = POSIX BARE LINUX
