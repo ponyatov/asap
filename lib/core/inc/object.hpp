@@ -1,3 +1,5 @@
+#pragma once
+
 /// @defgroup object object
 /// @ingroup core
 /// @brief root class for all objects
