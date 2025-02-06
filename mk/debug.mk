@@ -1,5 +1,5 @@
 .PHONY: openocd
-openocd: $(CWD)/hw/$(HW)/$(HW).openocd $(ELF)
+openocd: $(CWD)/hw/$(HW)/$(HW).openocd
 	$@ -f $< -c "program $(ELF) verify reset"
 
 .PHONY: gdb
