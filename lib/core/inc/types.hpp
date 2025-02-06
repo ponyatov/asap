@@ -4,7 +4,7 @@
 /// @ingroup core
 /// @{
 
-#include <cstdint>
+#include <stdint.h>
 
 /// @name signed
 /// @{
